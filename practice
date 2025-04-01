@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class=" h-screen bg-gradient-to-r from-orange-500 to-yellow-500 flex flex-col items-center justify-center">
+    <div class="heading bg-black w-full py-4">
+        <h1 class="text-3xl font-bold text-center text-white">My Portfolio</h1>
+        <nav class="flex justify-center space-x-5 p-2">
+            <div class="text-white">Home</div>
+            <div class="text-white">About</div>
+            <div class="text-white">Projects</div>
+            <div class="text-white">Contact</div>
+        </nav>
+    </div>
+    <div class=" h-full flex-col items-center justify-center mb-5 mt-10 p-6 bg-gradient-to-r from-green-500 to-pink-500 shadow-lg rounded-xl text-white w-96 text-center">
+        <h1 class="text-xl font-semibold">Build your own WEB Presence</h1>
+        <div class="h-[40%] mt-5 p-10 shadow-pink-500  border w-full bg-white text-black rounded-lg">
+            <h1>XYZ Lpu Jalandhar India</h1>
+        </div>
+       <div class="h-[40%] mt-5 p-10 shadow border bg-white text-black rounded-lg w-full">
+        <h1>Languages HTML CSS</h1>
+       </div>
+    </div>
+</body>
+</html>
