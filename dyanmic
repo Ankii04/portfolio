@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen w-full flex flex-col">
+    <div class="heading bg-pink-300 w-full py-4">
+        <nav class="flex justify-center space-x-5 p-2">
+            <button class="underline" id="Home">Home</button>
+            <button class="underline" id="AboutUs">About Us</button>
+            <button class="underline" id="ContactUs">Contact Us</button>
+        </nav>
+    </div>
+    <div class="flex justify-center items-center">
+    <form class="w-[50%] justify-center border-2 bg-green-300 hidden p-4" id="form">
+        <h2>Customize your paragraph</h2>
+        <label for="font-size">Font Size:</label>
+        <input type="text" id="font-size" name="font-size" class="border p-1">
+    </form>
+    </div>
+    <div class="flex w-full h-full">
+        <div class="w-1/2 flex  justify-center ">
+            <img src="d.jpg" alt="image" class="max-w-full max-h-full object-contain w-[50%]">
+        </div>
+        <div class="w-1/2 p-4 flex  justify-center">
+            <p class="text-center">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis maiores culpa corporis, dolores quibusdam voluptate similique dolore modi numquam ipsam maxime, minima hic. Placeat, cupiditate id assumenda enim quas necessitatibus.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        let contactButton = document.getElementById('ContactUs');
+        let form = document.getElementById('form');
+
+        function contactus() {
+            form.classList.toggle('hidden');
+        }
+
+        contactButton.addEventListener('click', contactus);
+    </script>
+</body>
+</html>
